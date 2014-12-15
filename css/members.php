@@ -5,12 +5,13 @@
 box-shadow: 2px 2px 2px #eee, 0 0 10px #eee;
 }
 .frontpage .front-box-title {
-    border-bottom: 1px solid #eaeaea;    
-    background: none repeat scroll 0 0 #fafafa;
-    color: #212121;
-    font: 18px QuicksandBold,Arial,sans-serif;
+ background: none repeat scroll 0 0 #f6f7f8;
+    border-bottom: 1px solid #eaeaea;
+    color: #6a7480;
+    font-size: 12px;
+    font-weight: bold;
     margin-bottom: 15px;
-    padding: 12px 7px;
+    padding: 11px;
     
 }
 
