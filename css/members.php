@@ -1,3 +1,8 @@
+/*
+Core developer for ossn
+
+*/
+
 .frontpage .front-box {
     margin-bottom: 20px;
     overflow: hidden;
