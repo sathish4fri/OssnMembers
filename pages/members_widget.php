@@ -19,7 +19,7 @@ $users = $users->getSiteUsers();
 ?>
 <div class="frontpage">
 <div class="front-box widget">
-<div class="front-box-title">Active Members</div>
+<div class="front-box-title">All Members</div>
 
 <div class="front-box-child">
 <?php foreach($users as $user)
