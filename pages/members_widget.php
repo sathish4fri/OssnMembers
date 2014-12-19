@@ -26,7 +26,7 @@ $users = $users->getSiteUsers();
 {
 $user = ossn_user_by_guid($user->guid);
 ?>
-<a title="<?php echo $user->username;?>" class="front-member-item" href="http://localhost/ossn/u/<?php echo $user->username;?>?ref=ossntb"><img width="60" height="60" alt="Profile picture of Michael" class="avatar user-1-avatar avatar-60 photo" src="<?php echo $user->iconURL()->large;?>"></a>
+<a title="<?php echo $user->username;?>" class="front-member-item" href="<?php echo ossn_site_url(); ?>u/<?php echo $user->username;?>?ref=ossntb"><img width="60" height="60" alt="Profile picture of Michael" class="avatar user-1-avatar avatar-60 photo" src="<?php echo $user->iconURL()->large;?>"></a>
 				
 <?php 
 }
