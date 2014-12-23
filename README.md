@@ -8,7 +8,11 @@ OSSN is released under the GNU General Public License (GPL) Version 2
 
 Component:
 
-This plugin used to show the active members in widget as side bar . It will work on ossn 2.0 .
+This plugin used to show the following users in sidebar .
+1.All members widget
+2.Friends widget .
+
+It will work in ossn 2.0 . 
 
 
 Its on development stage if any bug report it here ..
