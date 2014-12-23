@@ -19,6 +19,7 @@ ossn_register_page('members', 'ossn_member_pages');
 ossn_extend_view('css/ossn.default', 'components/OssnMembers/css/members');
 
 ossn_add_hook('newsfeed', "sidebar:right", 'members_side_bar');
+ossn_add_hook('newsfeed', "sidebar:right", 'members_side_bar2');
 }
 /* page function */
 function ossn_member_pages($pages) {
@@ -45,4 +46,10 @@ function members_side_bar($hook, $tye, $return){
 	$return[] = ossn_view('components/OssnMembers/pages/members_widget');;
 	return $return;
 }
+/* function to call the friends in sidebar*/
+function members_side_bar2($hook, $tye, $return){
+	$return[] = ossn_view('components/OssnMembers/pages/friends');;
+	return $return;
+}
+
 ossn_register_callback('ossn', 'init', 'ossn_members');
