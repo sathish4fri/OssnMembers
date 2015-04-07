@@ -8,12 +8,12 @@
  * @license   General Public Licence http://opensource-socialnetwork.com/licence
  * @link      http://www.opensource-socialnetwork.com/licence
  */
-$us = ossn_loggedin_user();
+
 $users = new OssnUser;
 $users = $users->getSiteUsers();
-$users = get_user_friends($us->guid);
 
 
+$i = 0;
 ?>
 <div class="frontpage">
 <div class="front-box widget">
@@ -22,15 +22,18 @@ $users = get_user_friends($us->guid);
 <div class="front-box-child">
 <?php foreach($users as $user)
 {
-
+$users = get_user_friends($us->guid);
 ?>
 <a title="<?php echo $user->username;?>" class="front-member-item" href="<?php echo ossn_site_url(); ?>u/<?php echo $user->username;?>?ref=ossntb"><img width="60" height="60" alt="Profile picture of Michael" class="avatar user-1-avatar avatar-60 photo" src="<?php echo $user->iconURL()->large;?>"></a>
 
 				
 <?php 
+$i++;
+ if($i > 11){
+   break;
+  }
 }
 ?>	
 </div>		
 </div><!--front-box-child ends-->
 </div>
-
