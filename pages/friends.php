@@ -22,7 +22,7 @@ $i = 0;
 <div class="front-box-child">
 <?php foreach($users as $user)
 {
-$users = get_user_friends($us->guid);
+$users = get_user_friends($user->guid);
 ?>
 <a title="<?php echo $user->username;?>" class="front-member-item" href="<?php echo ossn_site_url(); ?>u/<?php echo $user->username;?>?ref=ossntb"><img width="60" height="60" alt="Profile picture of Michael" class="avatar user-1-avatar avatar-60 photo" src="<?php echo $user->iconURL()->large;?>"></a>
 
